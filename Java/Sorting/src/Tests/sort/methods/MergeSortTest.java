@@ -32,5 +32,18 @@ public class MergeSortTest {
 
     @Test
     public void merge() {
+        ArrayList<Integer> testArrayList = new ArrayList();
+        ArrayList<Integer> testArrayListTwo = new ArrayList();
+
+        ArrayList<Integer> correctArrayList = new ArrayList();
+
+        testArrayList.add(2);
+        testArrayListTwo.add(1);
+
+        correctArrayList.add(1);
+        correctArrayList.add(2);
+
+        MergeSort sorter = new MergeSort();
+        assertEquals(sorter.merge(testArrayList, testArrayListTwo), correctArrayList);
     }
 }
