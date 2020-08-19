@@ -1,4 +1,3 @@
-let unSortedArray = [1,5,3,2,8,9,0,12,31,4];
 
 let mergeSort = (unsorted) => {
 
@@ -40,4 +39,4 @@ let mergeSort = (unsorted) => {
     return mergeAfterBreak(unsorted);
 };
 
-console.log(mergeSort(unSortedArray));
+exports.mergeSort = mergeSort;

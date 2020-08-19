@@ -13,4 +13,7 @@ let insertionSort = (arr) => {
         }
         arr[j + 1] = key;
     }
-}
+    return arr;
+};
+
+exports.insertionSort = insertionSort;
