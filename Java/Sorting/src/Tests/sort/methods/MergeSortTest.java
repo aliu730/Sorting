@@ -44,6 +44,6 @@ public class MergeSortTest {
         correctArrayList.add(2);
 
         MergeSort sorter = new MergeSort();
-        assertEquals(sorter.merge(testArrayList, testArrayListTwo), correctArrayList);
+        assertEquals(sorter.Merge(testArrayList, testArrayListTwo), correctArrayList);
     }
 }

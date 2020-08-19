@@ -13,11 +13,11 @@ public class MergeSort {
             return Arr;
         } else {
             int mid = (int) Math.floor(Arr.size() / 2);
-            return merge(BreakAndCallMerge(new ArrayList(Arr.subList(0, mid))) , BreakAndCallMerge(new ArrayList(Arr.subList(mid, Arr.size()))));
+            return Merge(BreakAndCallMerge(new ArrayList(Arr.subList(0, mid))) , BreakAndCallMerge(new ArrayList(Arr.subList(mid, Arr.size()))));
         }
     }
     /** Simply merges two arrays together (we assume they are sorted here) **/
-    public ArrayList merge(ArrayList L, ArrayList R) {
+    public ArrayList Merge(ArrayList L, ArrayList R) {
         int l = 0;
         int r = 0;
 

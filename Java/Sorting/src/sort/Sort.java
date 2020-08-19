@@ -13,7 +13,7 @@ public class Sort {
         testArray.add(6);
         testArray.add(3);
 
-        System.out.println(mergeSort.merge(new ArrayList(testArray.subList(0, 3)), new ArrayList(testArray.subList(3,4))));
+        System.out.println(mergeSort.Merge(new ArrayList(testArray.subList(0, 3)), new ArrayList(testArray.subList(3,4))));
         System.out.println(mergeSort.BreakAndCallMerge(testArray));
     }
 }
