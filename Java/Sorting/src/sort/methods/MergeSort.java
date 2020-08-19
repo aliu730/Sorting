@@ -5,7 +5,9 @@ import static java.lang.Integer.parseInt;
 
 public class MergeSort {
 
-    /** This should simply merge two arrays into one in order **/
+    /** Break apart the array in two parts until they are single units
+     * Finally call merge to bring them back together slowly sorting
+     * **/
     public ArrayList BreakAndCallMerge(ArrayList Arr) {
         if (Arr.size() == 1) {
             return Arr;
@@ -14,7 +16,7 @@ public class MergeSort {
             return merge(BreakAndCallMerge(new ArrayList(Arr.subList(0, mid))) , BreakAndCallMerge(new ArrayList(Arr.subList(mid, Arr.size()))));
         }
     }
-
+    /** Simply merges two arrays together (we assume they are sorted here) **/
     public ArrayList merge(ArrayList L, ArrayList R) {
         int l = 0;
         int r = 0;
